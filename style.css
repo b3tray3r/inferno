@@ -1,0 +1,156 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.page__header {
+	background: url(https://sun9-34.userapi.com/c824503/v824503986/d651b/iZWyDMUuKR0.jpg) no-repeat center center ;
+	background-size: auto; 
+  	padding: 150px 0;
+
+}
+
+
+
+.header {
+
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.header__avatar {
+	margin-top: 30px;
+}
+
+.header__title {
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 40px;
+	color: #fff;
+	position: relative;
+	padding-bottom: 10px;
+
+}
+
+.header__title:after {
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	transform: translate(50%, 0);
+
+}
+
+.header__sub-title {
+	text-align: center;
+	font-size: 28px;
+	color: #fff;
+	margin-bottom: 15px;
+
+}
+
+.page {
+	background-color: #fafafa;
+}
+
+.page__content {
+
+}
+
+
+
+.avatar-img{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.avatar {
+	border: 1px solid white;
+	border-radius: 50%;
+	height: 200px;
+}
+
+.post-list {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	top: -50px;
+}
+
+.post-list__item {
+	background: #fff;
+	border-radius: 10px;
+	border: 1px solid #cccccc;
+	padding: 15px 30px;
+	margin-top: 30px;
+	max-width: 600px;
+
+}
+
+.post-list__item:first-child {
+	margin-top: 0;
+	border-top: 1px solid transparent;
+}
+
+.post {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.post__title {
+	margin-bottom: 10px;
+	font-size: 22px;
+	color: #282828;
+}
+
+.post__text {
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+
+@media screen and (max-width: 1000px){
+	.page {
+		background: #fff;
+	}
+	.post-list {
+		top: 0px;
+
+	}
+	.post-list__item {
+		max-width: 100%;
+		border-radius: 0;
+		border: 0;
+	}
+
+
+}
+
+
+@media screen and (max-width: 575px) {
+	.header__sub-title {
+		font-size: 20px;
+	}
+	.header__title {
+		font-size: 32px;
+	}
+
+	
+}
